@@ -5,7 +5,7 @@ type Filters = {
 }
 
 
-export const filters = (selector: string, args: object = {}) => {
+export const filters = (selector: string) => {
     const elements: NodeListOf<HTMLElement> = document.querySelectorAll(selector);
     const activeFilters: Filters = {
         topic: '',

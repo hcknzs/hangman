@@ -6,7 +6,7 @@ export const selection = (selector: string) => {
     const elements: NodeListOf<HTMLElement> = document.querySelectorAll(selector);
     const counter: HTMLElement | null = document.querySelector('.question-counter');
     if (counter)
-        counter.innerHTML = config.max;
+        counter.innerHTML = `${config.max}`;
 
     const questions: string[] = [];
 
