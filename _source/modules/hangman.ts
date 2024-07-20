@@ -1,17 +1,13 @@
 
-
 class Hangman{
 
 	activeElement: HTMLElement | null
 
 	constructor (selector: string){
 		this.activeElement = document.querySelector(`${selector} img.active`);
-		console.log(this.activeElement)
 	}
 
 	updateHangman = (amount: any) => {
-
-		console.log(amount)
 			
 		if (this.activeElement === null) {
 			return;
