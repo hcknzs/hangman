@@ -7,7 +7,10 @@
         return 'tag-'.Str::slug($el);
     }, $item->audience()->split());
 ?>
-<article class="box" id="<?= $item->id() ?>" data-topic="<?= join(' ', $tags_topic) ?>"  data-audience="<?= join(' ', $tags_audience) ?>">
-    <h2><?= $item->title()->html() ?></h2>
+<article class="question box" id="<?= $item->id() ?>" key="<?= $item->key() ?>" data-topic="<?= join(' ', $tags_topic) ?>"  data-audience="<?= join(' ', $tags_audience) ?>">
+
+    <input type="checkbox" class="checkbox" name="<?= $item->id() ?>">
+
+    <h2 class="is-size-5"><?= $item->title()->html() ?></h2>
     <p><?= $item->question() ?></p>
 </article>

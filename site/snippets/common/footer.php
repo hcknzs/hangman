@@ -1,4 +1,4 @@
-	<footer class="footer">
+	<footer class="section">
 
 	</footer>
 	<?= vite()->js('_source/main.ts') ?>
