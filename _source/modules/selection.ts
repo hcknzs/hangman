@@ -1,5 +1,5 @@
 const config = {
-    max: 2,
+    max: 10,
 }
 
 export const selection = (selector: string) => {
