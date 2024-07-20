@@ -27,12 +27,17 @@
 
 		<div class="column block">
 			<div class="box">
-				<figure>
-					hangman
-				</figure>
+				<?php snippet('hangman') ?>
 			</div>
 			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime asperiores perspiciatis, quibusdam ipsa nostrum, debitis expedita voluptas cupiditate labore distinctio vel alias numquam blanditiis culpa! Accusantium impedit tenetur quis! Dolorum?</p>
 		</div>
+
+		<article class="result-message message is-danger">
+			<div class="message-body">
+				<h3 class="title is-3 has-text-danger">Hängst Du?</h3>
+				<p>Wenn die AfD an die Regierung kommt könnte das dein Verhängnis sein.</p>
+			</div>
+		</article>
 
 	</div>
 

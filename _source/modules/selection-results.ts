@@ -1,6 +1,5 @@
 export const results = (selector: string) => {
     const elements: NodeListOf<HTMLElement> = document.querySelectorAll(selector);
-    const counter: HTMLElement | null = document.querySelector('.question-counter');
 
     const init = () => {
         elements.forEach((el: HTMLElement) => {
