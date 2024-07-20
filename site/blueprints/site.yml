@@ -1,0 +1,15 @@
+title: Site
+
+sections:
+  pages:
+    type: pages
+
+  fields:
+    type: fields
+    fields:
+      topic:
+        label: Thema
+        type: tags
+      audience:
+        label: Zielgruppe
+        type: tags

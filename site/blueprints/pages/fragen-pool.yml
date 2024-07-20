@@ -1,0 +1,14 @@
+title: Fragen-Pool
+
+columns:
+  main:
+    width: 2/3
+    sections:
+      pages:
+        label: Alle Fragen
+        type: pages
+        create: [frage]
+
+  sidebar:
+    width: 1/3
+    fields:

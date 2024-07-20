@@ -1,0 +1,47 @@
+title: Frage
+
+columns:
+  main:
+    width: 2/3
+    sections:
+      content:
+        type: fields
+        fields:
+          question:
+            label: Frage
+            type: textarea
+            help: kurze, prägnante Fragestellung
+          annotation:
+            label: Anmerkungen
+            type: textarea
+            help: nicht verklausulierte, klare Erkläuterung der AFD-Aussage
+          sourceText:
+            label: Quelle Text
+            type: textarea
+            help: Textausschnitt aus dem AFD-Programm
+          source:
+            label: Quelle Dokument
+            type: text
+            help: Dokument/Abschnitt/Paragraph
+
+  sidebar:
+    width: 1/3
+    fields:
+      topic:
+        label: Thema
+        type: tags
+        accept: options
+        options:
+          type: query
+          query: site.topic.split
+          text: "{{ item.value }}"
+          value: "{{ item.value.slug }}"
+      audience:
+        label: Zielgruppe
+        type: tags
+        accept: options
+        options:
+          type: query
+          query: site.audience.split
+          text: "{{ item.value }}"
+          value: "{{ item.value.slug }}"
