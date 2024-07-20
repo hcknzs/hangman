@@ -1,24 +1,31 @@
-.question-radios {
+.question-radios,
+.question-checkbox {
   display: flex;
   gap: 1.5rem;
 }
 
-.question-radios label {
+.question-radios label,
+.question-checkbox label {
   display: flex;
   gap: 0.375rem;
   line-height: 1;
   align-items: center;
   cursor: pointer;
+  --color: hsl(0, 0%, 71%);
 
   .icon {
-    background: hsl(0, 0%, 71%);
-    color: white;
+    border: 1px solid var(--color);
+    background-color: transparent;
+    color: var(--color);
     border-radius: 999px;
     width: 2rem;
     height: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  &.label-check {
+    --active-color: hsl(171, 100%, 41%);
   }
   &.label-yes {
     --active-color: hsl(141, 71%, 48%);
@@ -28,10 +35,18 @@
   }
 }
 
+.question-checkbox input[type="checkbox"],
 .question-radios input[type="radio"] {
   display: none;
   &:checked + label .icon {
     background-color: var(--active-color);
+    --color: white;
+  }
+}
+
+.question-checkbox input[type="checkbox"] {
+  &:not(:checked) + label .icon > *:before {
+    content: "";
   }
 }
 

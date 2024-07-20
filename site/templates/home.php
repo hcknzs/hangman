@@ -15,7 +15,7 @@
 					<?php snippet('question', ['item' => $item, 'index' => $index]);
 					$index++; ?>
 				<?php endforeach ?>
-				<input type="submit" value="Submit" class="button">
+				<input type="submit" value="Fragebogen zusammenstellen" class="button is-primary">
 			</form>
 
 		</div>
