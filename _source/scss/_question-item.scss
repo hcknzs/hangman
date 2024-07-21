@@ -50,8 +50,9 @@
   }
 }
 
-.question-item.is-answered {
-  & + .question-item:not(.is-answered) {
-    background: hsl(48, 100%, 96%);
+.question-item:not(.is-answered) {
+  background: hsl(48, 100%, 96%);
+  ~ * {
+    background: white;
   }
 }

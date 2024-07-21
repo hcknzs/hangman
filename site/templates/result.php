@@ -9,7 +9,7 @@ if (empty($_POST)) {
 
 <div class="container">
 
-	<h1 class="is-size-1 mb-4"><?= $page->title() ?></h1>
+	<h1 class="title mb-4"><?= $page->title() ?></h1>
 	<p class="is-size-4 mb-4">Was hältst du davon:</p>
 
 	<div class="columns">
