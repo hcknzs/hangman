@@ -2,22 +2,26 @@
 <?php snippet('common/header') ?>
 
 <?php
-	if (empty($_POST)) {
-		go($site);
-	}
+if (empty($_POST)) {
+	go($site);
+}
 ?>
 
 <div class="container">
 
-	<h1 class="is-size-1"><?= $page->title() ?></h1>
+	<h1 class="is-size-1 mb-4"><?= $page->title() ?></h1>
+	<p class="is-size-4 mb-4">Was hältst du davon:</p>
 
 	<div class="columns">
 
 		<div class="column is-two-thirds">
+
+
 			<h2 class="is-size-3 is-sr-only">Fragen</h2>
+
 			<div class="questions">
 				<?php $index = 0; ?>
-				<?php foreach($questions as $item): ?>
+				<?php foreach ($questions as $item) : ?>
 					<?php snippet('question-result', ['item' => $item, 'index' => $index]);
 					$index++; ?>
 				<?php endforeach ?>
@@ -44,6 +48,11 @@
 			</div>
 		</article>
 
+	</div>
+
+	<div class="columns mt-4">
+		<div class="column has-text-right"></div>
+		<button class="button">Drucken</button>
 	</div>
 
 </div>
