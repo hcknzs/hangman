@@ -9,7 +9,7 @@
 
 <div class="container">
 
-	<h1 class="is-size-1"><?= $page->title() ?></h1>
+	<h1 class="title"><?= $page->title() ?></h1>
 
 	<div class="columns">
 

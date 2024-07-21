@@ -3,11 +3,14 @@
 
 <div class="container">
 
+	<h1 class="title">Dein Verhängnis</h1>
+
 	<div class="columns">
 
 		<div class="column is-two-thirds">
-			<h2 class="is-size-3">Fragen</h2>
-			<p>Bitte noch <span class="question-counter">0</span> Fragen auswählen.</p>
+			<h2 class="title is-5">Fragen</h2>
+
+			<!-- <p>Bitte noch <span class="question-counter">0</span> Fragen auswählen.</p> -->
 
 			<form class="questions" method="post" action="/questions">
 				<?php $index = 0; ?>
@@ -21,7 +24,7 @@
 		</div>
 
 		<div class="column">
-				<h2 class="is-size-3">Filter</h2>
+				<h2 class="title is-5">Filter</h2>
 				<div class="box">
 					<div class="field">
 						<label class="label">Themen</label>
