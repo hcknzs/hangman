@@ -7,7 +7,7 @@
 		return 'tag-'.Str::slug($el);
 	}, $item->audience()->split());
 ?>
-<article index="<?= $index ?>" class="question-item box" id="<?= $item->id() ?>" key="<?= $item->key() ?>" data-topic="<?= join(' ', $tags_topic) ?>"  data-audience="<?= join(' ', $tags_audience) ?>">
+<article index="<?= $index ?>" class="question-item box" id="<?= $item->id() ?>" data-topic="<?= join(' ', $tags_topic) ?>"  data-audience="<?= join(' ', $tags_audience) ?>">
 	<div class="columns">
 		<div class="column">
 			<p><?= $item->question() ?></p>

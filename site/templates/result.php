@@ -43,8 +43,22 @@
 				<p>Jede These ist eine Parole/Forderung aus dem AfD-Parteiprogramm - und dein Verhängnis.</p>
 			</div>
 		</article>
-
 	</div>
 
 </div>
+
+
+<section class="section">
+	<h2 class="title is-5">Erklärungen</h2>
+	<button class="button is-text" onClick="console.log(this.nextElementSibling.style.display = 'block'); this.style.display = 'none';">Erklärungen anzeigen</button>
+	<div class="columns" style="display: none">
+		<div class="column is-two-thirds">
+			<?php foreach($questions as $item): ?>
+				<?php snippet('question-result-info', ['item' => $item, 'index' => $index]);
+				$index++; ?>
+			<?php endforeach ?>
+		</div>
+	</div>
+</section>
+
 <?php snippet('common/footer') ?>
