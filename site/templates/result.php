@@ -62,7 +62,7 @@ if (empty($_POST)) {
 	<button class="button is-text" onClick="console.log(this.nextElementSibling.style.display = 'block'); this.style.display = 'none';">Erklärungen anzeigen</button>
 	<div class="columns" style="display: none">
 		<div class="column is-two-thirds">
-			<?php foreach($questions as $item): ?>
+			<?php foreach ($questions as $item) : ?>
 				<?php snippet('question-result-info', ['item' => $item, 'index' => $index]);
 				$index++; ?>
 			<?php endforeach ?>
@@ -70,5 +70,4 @@ if (empty($_POST)) {
 	</div>
 </section>
 
-<?php snippet('common/footer') ?>
 <?php snippet('common/footer') ?>
