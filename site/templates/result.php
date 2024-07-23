@@ -20,47 +20,50 @@
 					$index++; ?>
 				<?php endforeach ?>
 			</div>
-			<br>
-			<p><a href="/" class="button is-primary">Nochmal starten</a></p>
 		</div>
 
 		<div class="column block">
-			<div class="box">
-				<?php snippet('hangman') ?>
-			</div>
-
 			<article class="message is-info">
 				<div class="message-body">Bei jedem "Lieber nicht", mach einen Strich beim Hangman.
 					Wenn du zusätzlich persönlich betroffen bist, mach einen Extra-Strich.
 				</div>
 			</article>
+			<div class="box">
+				<?php snippet('hangman') ?>
+			</div>
+
+
 		</div>
 
 		<article class="result-message message is-danger">
 			<div class="message-body">
 				<h3 class="title is-3 has-text-danger">Hängst Du?</h3>
-				<p>Jede These ist eine Parole/Forderung aus dem AfD-Parteiprogramm - und dein Verhängnis.</p>
+				<p>Jede These ist eine Parole/Forderung aus dem AfD-Parteiprogramm - und auch dein Verhängnis, sollte die AfD an die Regierung gelangen.</p>
 			</div>
 		</article>
 	</div>
 
-	<!-- <div class="columns mt-4">
-		<div class="column has-text-right"></div>
-		<button class="button">Drucken</button>
-	</div> -->
+	<div class="columns mt-4">
+		<div class="column has-text-right">
+
+			<a href="/" class="button is-primary"><span>Nochmal starten</span> <span class="icon"><i class="fas fa-rotate"></i></span> </a>
+		</div>
+	</div>
 
 </div>
 
 
 <section class="section">
-	<h2 class="title is-5">Erklärungen</h2>
-	<button class="button is-text" onClick="console.log(this.nextElementSibling.style.display = 'block'); this.style.display = 'none';">Erklärungen anzeigen</button>
-	<div class="columns" style="display: none">
-		<div class="column is-two-thirds">
-			<?php foreach ($questions as $item) : ?>
-				<?php snippet('question-result-info', ['item' => $item, 'index' => $index]);
-				$index++; ?>
-			<?php endforeach ?>
+	<div class="container mt-3 pt-6 explanations">
+		<h2 class="title is-5">Erklärungen</h2>
+		<button class="button is-text button-show" onClick="console.log(this.nextElementSibling.style.display = 'block'); this.style.display = 'none';">Erklärungen anzeigen</button>
+		<div class="columns" style="display: none">
+			<div class="column is-two-thirds">
+				<?php foreach ($questions as $item) : ?>
+					<?php snippet('question-result-info', ['item' => $item, 'index' => $index]);
+					$index++; ?>
+				<?php endforeach ?>
+			</div>
 		</div>
 	</div>
 </section>
