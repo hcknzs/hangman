@@ -1,3 +1,10 @@
+
+<?php
+// skip home page for now
+go('/questions', 301);
+?>
+
+
 <?php snippet('common/head') ?>
 <?php snippet('common/header') ?>
 

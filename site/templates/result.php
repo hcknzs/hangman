@@ -1,12 +1,6 @@
 <?php snippet('common/head') ?>
 <?php snippet('common/header') ?>
 
-<?php
-if (empty($_POST)) {
-	go($site);
-}
-?>
-
 <div class="container">
 
 	<h1 class="title mb-4"><?= $page->title() ?></h1>
@@ -26,7 +20,8 @@ if (empty($_POST)) {
 					$index++; ?>
 				<?php endforeach ?>
 			</div>
-
+			<br>
+			<p><a href="/" class="button is-primary">Nochmal starten</a></p>
 		</div>
 
 		<div class="column block">
@@ -49,10 +44,10 @@ if (empty($_POST)) {
 		</article>
 	</div>
 
-	<div class="columns mt-4">
+	<!-- <div class="columns mt-4">
 		<div class="column has-text-right"></div>
 		<button class="button">Drucken</button>
-	</div>
+	</div> -->
 
 </div>
 

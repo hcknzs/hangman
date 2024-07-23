@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * returns filtered questions using POST ids, or all questions, if there is no POST data available
+ */
 return function ($page, $site, $kirby) {
     // get post object from form
     $post = $_POST;
@@ -14,6 +17,8 @@ return function ($page, $site, $kirby) {
             }
             return $item;
         });
+    } else {
+        $questions = $site->find('fragen')->children()->listed();
     }
 
     return [
