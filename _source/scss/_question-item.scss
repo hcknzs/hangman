@@ -52,7 +52,14 @@
 
 .question-item:not(.is-answered) {
   background: hsl(48, 100%, 96%);
+  .question-text {
+    font-weight: bold;
+  }
+
   ~ * {
     background: white;
+    .question-text {
+      font-weight: normal;
+    }
   }
 }

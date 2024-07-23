@@ -1,15 +1,15 @@
 <?php
-	$tags_topic = array_map(function($el) {
-		return 'tag-'.Str::slug($el);
-	}, $item->topic()->split());
+$tags_topic = array_map(function ($el) {
+	return 'tag-' . Str::slug($el);
+}, $item->topic()->split());
 
-	$tags_audience = array_map(function($el) {
-		return 'tag-'.Str::slug($el);
-	}, $item->audience()->split());
+$tags_audience = array_map(function ($el) {
+	return 'tag-' . Str::slug($el);
+}, $item->audience()->split());
 ?>
-<article index="<?= $index ?>" class="question-item box" id="<?= $item->id() ?>" data-topic="<?= join(' ', $tags_topic) ?>"  data-audience="<?= join(' ', $tags_audience) ?>">
-	<div class="columns">
-		<div class="column">
+<article index="<?= $index ?>" class="question-item box" id="<?= $item->id() ?>" data-topic="<?= join(' ', $tags_topic) ?>" data-audience="<?= join(' ', $tags_audience) ?>">
+	<div class="columns is-vcentered">
+		<div class="column question-text">
 			<p><?= $item->question() ?></p>
 		</div>
 		<div class="column is-narrow">
