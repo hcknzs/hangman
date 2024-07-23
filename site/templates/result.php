@@ -36,9 +36,10 @@
 		</div>
 
 		<article class="result-message message is-danger">
-			<div class="message-body">
-				<h3 class="title is-3 has-text-danger">Hängst Du?</h3>
-				<p>Jede These ist eine Parole/Forderung aus dem AfD-Parteiprogramm - und auch dein Verhängnis, sollte die AfD an die Regierung gelangen.</p>
+			<div class="message-body p-6">
+				<h3 class="title is-2 has-text-danger">Hängst Du?</h3>
+				<p class="is-size-4 mb-4">Jede These ist eine Parole/Forderung aus dem AfD-Parteiprogramm. </p>
+				<p class="is-size-4">Und könnte auch dein Verhängnis sein, sollte die AfD an die Regierung gelangen.</p>
 			</div>
 		</article>
 	</div>
